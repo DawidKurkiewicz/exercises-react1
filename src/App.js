@@ -11,7 +11,12 @@ const App = (props) => (
       {namesList}
     </ul>
    <Button
+   label = 'kliknij mnie'
+   alertText='klikniete'
+   />
+   <Button
    label = 'click me'
+   alertText = 'clicked'
    />
   </div>
 )

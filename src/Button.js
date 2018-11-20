@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Button = ({label}) => (
-    <button 
-    onClick={() => alert('bu')}
-    >
-        {label}
-    </button>
-
+const Button = (props) => (
+    <div>
+        <button
+            onClick={() => alert(props.alertText)}
+        >
+            {props.label}
+        </button>
+    </div>
 )
 
 export default Button
