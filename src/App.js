@@ -3,21 +3,20 @@ import Button from './Button'
 
 
 const names = ['ala', 'ela', 'ola']
-const namesList = names.map(name => <li key = {name}> {name}</li>)
+const namesList = names.map(name => <li key={name}> {name}</li>)
 
 const App = (props) => (
   <div>
     <ul>
       {namesList}
     </ul>
-   <Button
-   label = 'kliknij mnie'
-   alertText='klikniete'
-   />
-   <Button
-   label = 'click me'
-   alertText = 'clicked'
-   />
+    <Button
+      label='kliknij mnie'
+      onClickHandler={() => alert('klik')} />
+    <Button
+      label='click me'
+      onClickHandler={() => console.log('click')} />
+    
   </div>
 )
 
