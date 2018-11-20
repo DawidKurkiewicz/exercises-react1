@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Button = ({label}) => (
-    <button >
+    <button 
+    onClick={() => alert('bu')}
+    >
         {label}
     </button>
 
