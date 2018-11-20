@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 
 const names = ['ala', 'ela', 'ola']
@@ -9,6 +10,7 @@ const App = (props) => (
     <ul>
       {namesList}
     </ul>
+   <Button/>
   </div>
 )
 
